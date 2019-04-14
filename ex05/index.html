@@ -1,0 +1,44 @@
+<!--
+* TODO (1) Ajouter a la barre de navigation un "brand-logo" de "IUT - Montpellier".
+* TODO (2) La liste de liens a l'interieur de cette barre de navigation ne doit pas s'afficher sur les ecrans de petite taille.
+* TODO (3) Ajouter un boutton (<a>) au debut de la bar de navigation avec l'icon "menu", ce bouton a la classe "sidenav-trigger" et doit permettre d'activer la liste avec l'id "sidenav" (i.e. data-target="sidenav")
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercice 05 - Materialize</title>
+  <meta charset="utf-8">
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Materialize: Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+
+<body class="grey lighten-3">
+    <nav>
+      <div class="nav-wrapper container">
+        <ul class="right ">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul id="sidenav" class="sidenav">
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+      $(document).ready(function(){
+        $('.sidenav').sidenav();
+      });
+  </script>
+</body>
+</html>
